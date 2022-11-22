@@ -1,0 +1,34 @@
+class Device:
+    def __init__(self):
+        self.__taip = ''
+        self.__storage = 0
+        self.__age = ''
+
+        def set_taip(self, taip):
+            self.__taip = taip
+
+        def get_taip(self):
+            return self.__taip
+        
+        def set_storage(self, storage):
+            self.__storage = storage
+
+        def get_storage(self):
+            return self.__storage
+        
+        def set_age(self, age):
+            self.__age = age
+
+        def get_age(self):
+            return self.__age
+
+        class Phone(Device):
+            def __init__(self, taip = '', storage = 0, age = ''):
+
+                super().__init__()
+                self.__mark = ''
+                self.__model = ''
+
+    def info(self):
+        print('Type:', self.__type, '\nStorage:',\
+              self.__storage, '\nyear of construction:', self.__age)
